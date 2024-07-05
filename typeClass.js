@@ -1,0 +1,128 @@
+const TypePokemons = {
+  normal: {
+    type: "normal",
+    SuperEffective: [],
+    notEffective: ["rock", "steel"],
+    noEffect: ["ghost"],
+  },
+  fire: {
+    type: "fire",
+    SuperEffective: ["plant", "ice", "bug", "steel"],
+    notEffective: ["fire", "water", "rock", "dragon"],
+    noEffect: [],
+  },
+  water: {
+    type: "water",
+    SuperEffective: ["fire", "rock", "ground"],
+    notEffective: ["water", "plant", "dragon"],
+    noEffect: [],
+  },
+  plant: {
+    type: "plant",
+    SuperEffective: ["water", "rock", "ground"],
+    notEffective: [
+      "fire",
+      "plant",
+      "poison",
+      "flying",
+      "bug",
+      "dragon",
+      "steel",
+    ],
+    noEffect: [],
+  },
+  electric: {
+    type: "electric",
+    SuperEffective: ["water", "flying"],
+    notEffective: ["electric", "plant", "dragon"],
+    noEffect: ["ground"],
+  },
+  ice: {
+    type: "ice",
+    SuperEffective: ["plant", "ground", "flying", "dragon"],
+    notEffective: ["fire", "water", "ice", "steel"],
+    noEffect: [],
+  },
+  fight: {
+    type: "fight",
+    SuperEffective: ["normal", "ice", "rock", "dark", "steel"],
+    notEffective: ["poison", "flying", "bug", "fairy", "psychic"],
+    noEffect: [],
+  },
+  poison: {
+    type: "poison",
+    SuperEffective: ["plant", "fairy"],
+    notEffective: ["poison", "ground", "rock", "ghost"],
+    noEffect: ["steel"],
+  },
+  ground: {
+    type: "ground",
+    SuperEffective: ["fire", "electric", "poison", "rock", "steel"],
+    notEffective: ["plant", "bug"],
+    noEffect: ["flying"],
+  },
+  flying: {
+    type: "flying",
+    SuperEffective: ["fight", "plant", "bug"],
+    notEffective: ["electric", "rock", "steel"],
+    noEffect: [],
+  },
+  psychic: {
+    type: "psychic",
+    SuperEffective: ["fight", "poison"],
+    notEffective: ["psychic", "steel"],
+    noEffect: ["dark"],
+  },
+  bug: {
+    type: "bug",
+    SuperEffective: ["plant", "psychic", "dark"],
+    notEffective: [
+      "fire",
+      "fight",
+      "poison",
+      "flying",
+      "ghost",
+      "steel",
+      "fairy",
+    ],
+    noEffect: [],
+  },
+  rock: {
+    type: "rock",
+    SuperEffective: ["fire", "ice", "flying", "bug"],
+    notEffective: ["fight", "ground", "steel"],
+    noEffect: [],
+  },
+  ghost: {
+    type: "ghost",
+    SuperEffective: ["psychic", "ghost"],
+    notEffective: ["dark"],
+    noEffect: ["normal"],
+  },
+  dragon: {
+    type: "dragon",
+    SuperEffective: ["dragon"],
+    notEffective: ["steel"],
+    noEffect: ["fairy"],
+  },
+  dark: {
+    type: "dark",
+    SuperEffective: ["psychic", "ghost"],
+    notEffective: ["fight", "dark", "fairy"],
+    noEffect: [],
+  },
+  steel: {
+    type: "steel",
+    SuperEffective: ["ice", "rock", "fairy"],
+    notEffective: ["fire", "water", "electric", "steel"],
+    noEffect: [],
+  },
+  fairy: {
+    type: "fairy",
+    SuperEffective: ["fight", "dragon", "dark"],
+    notEffective: ["fire", "poison", "steel"],
+    noEffect: [],
+  },
+};
+
+module.exports = TypePokemons;
